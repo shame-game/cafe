@@ -632,7 +632,7 @@ section {
 
 .items-img>img{
     width: 100%;
-    aspect-ratio: 9/9;
+    aspect-ratio: 9/10;
     object-fit: cover;
 }
 .items-bottom{
@@ -644,6 +644,10 @@ section {
 }
 .items-bottom>h1{
     font-size: 1em;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 .items-bottom>div{
     display: flex;
@@ -752,6 +756,10 @@ section {
     color: var(--color-nen);
     font-weight: 500;
     margin: 10px 20px 10px 20px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 .thongtin h4{
     font-size: 2em;
