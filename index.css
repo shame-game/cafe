@@ -632,7 +632,7 @@ section {
 
 .items-img>img{
     width: 100%;
-    aspect-ratio: 9/0;
+    aspect-ratio: 9/9;
     object-fit: cover;
 }
 .items-bottom{
@@ -689,4 +689,115 @@ section {
 }
 .nexte>i{
     font-size: 25px;
+}
+
+.bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999999999;
+}
+.box{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    height: max-content;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    z-index: 999999999999;
+    border-radius: 8px;
+    padding: 20px;
+}
+.box img{
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border: 1px solid black;
+}
+.hinhanh{
+    width: 50%;
+}
+#img1{
+    width: 100%;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.hinhanh>div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.hinhanh>div>img{
+    width: 32%;
+    object-fit: cover;
+}
+.thongtin{
+    font-size: 16px;
+    display: flex;
+    flex-direction: column ;
+    justify-content: space-between;
+}
+.thongtin span{
+    font-size: 1em;
+    color: var(--color-nen);
+    font-weight: 500;
+    margin:  20px;
+}
+.thongtin h1{
+    font-size: 2.5em;
+    color: var(--color-nen);
+    font-weight: 500;
+    margin: 10px 20px 10px 20px;
+}
+.thongtin h4{
+    font-size: 2em;
+    font-weight: 500;
+    margin: 10px 20px;
+    color: var(--color-nen);
+}
+.thongtin p{
+    font-size: 1em;
+    font-weight: 500;
+    margin: 10px 20px;
+}
+.thongtin .feedback{
+    display: flex;
+    margin: 20px;
+}
+
+.thongtin-bottom{
+    font-size: 16px;
+}
+.thongtin-bottom>.border-top{
+    width: 90%;
+    margin: 0 20px;
+    height: 2px;
+    background-color: rgb(58, 58, 58);
+}
+
+.Share{
+    display: flex;
+    margin: 20px;
+    align-items: center;
+}
+.Share>p{
+    font-size: 1em;
+    margin-left: 10px;
+    margin-bottom: unset;
+}
+
+.thongtin-contact{
+    display: flex;
+    margin: 10px;
+}
+.thongtin-contact>svg{
+    margin: 10px;
+    padding: 5px;
+    background-color: rgb(234, 234, 234);
+    fill: var(--color-nen);
+    border-radius: 3px;
 }

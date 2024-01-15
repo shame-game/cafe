@@ -28,9 +28,9 @@ fetchSheet
     qr = rows.filter(row => row.section == 'pay')
     packages = rows.filter(row => row.section == 'packages');
     var item = ''
-    content.item.forEach((row) => {
+    content.item.forEach((row,i) => {
       item += `
-    <div class="items col-lg-4">
+    <div class="items col-lg-4" index=${i}>
                             <div class="items-top">
                                 T&A Lab
                             </div>
@@ -55,4 +55,26 @@ fetchSheet
       prevArrow: '<span class="preve"><i class="bi bi-arrow-left-short"></i></span>',
       nextArrow: '<span class="nexte"><i class="bi bi-arrow-right-short"></i></span>',
     });
+    
+
+    vams('.items').forEach((tab)=>{
+      tab.addEventListener('click',()=>{
+        let index = tab.getAttribute('index');
+        vam('.bg').setAttribute('style','display:block');
+        vam('.box').setAttribute('style','display:flex')
+        let box = content.item[index]
+        vam('#img1').src = box.row5;
+        vam('#img2').src = box.row6;
+        vam('#img3').src = box.row7;
+        vam('#img4').src = box.row8;
+        vam('.thongtin span').innerText = box.row1;
+        vam('.thongtin h1').innerText = box.row2;
+        vam('.thongtin h4').innerText = box.row3;
+        vam('.thongtin p').innerText = box.row9;
+        vam('.bg').addEventListener('click',()=>{
+          vam('.bg').setAttribute('style','display:none')
+        vam('.box').setAttribute('style','display:none')
+        })
+      })
+    })
   });
