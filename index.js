@@ -28,7 +28,7 @@ fetchSheet
     qr = rows.filter(row => row.section == 'pay')
     packages = rows.filter(row => row.section == 'packages');
     var item = ''
-    content.item.forEach((row,i) => {
+    content.item.forEach((row, i) => {
       item += `
     <div class="items col-lg-4" index=${i}>
                             <div class="items-top">
@@ -55,26 +55,88 @@ fetchSheet
       prevArrow: '<span class="preve"><i class="bi bi-arrow-left-short"></i></span>',
       nextArrow: '<span class="nexte"><i class="bi bi-arrow-right-short"></i></span>',
     });
-    
 
-    vams('.items').forEach((tab)=>{
-      tab.addEventListener('click',()=>{
-        let index = tab.getAttribute('index');
-        vam('.bg').setAttribute('style','display:block');
-        vam('.box').setAttribute('style','display:flex')
-        let box = content.item[index]
-        vam('#img1').src = box.row5;
-        vam('#img2').src = box.row6;
-        vam('#img3').src = box.row7;
-        vam('#img4').src = box.row8;
-        vam('.thongtin span').innerText = box.row1;
-        vam('.thongtin h1').innerText = box.row2;
-        vam('.thongtin h4').innerText = box.row3;
-        vam('.thongtin p').innerText = box.row9;
-        vam('.bg').addEventListener('click',()=>{
-          vam('.bg').setAttribute('style','display:none')
-        vam('.box').setAttribute('style','display:none')
+
+
+    vams('.items').forEach((box) => {
+      box.addEventListener('click', (e) => {
+        let index = box.getAttribute('index')
+        let list = [];
+        list = content.item[index]
+        vam('#payqr').src = list.row9;
+        vam('.thongtin span').innerText = list.row1
+        vam('.thongtin h1').innerText = list.row2
+        vam('.feedback h4').innerText = list.row3
+        vam('.feedback h3').innerText = 'Kho còn: ' + list.row4
+        vam('.thongtin p').innerText = list.row10
+        vam('#img1').src = list.row5
+        vam('#img2').src = list.row6
+        vam('#img3').src = list.row7
+        vam('#img4').src = list.row8
+        vam('body').setAttribute('style', 'overflow-y: hidden;')
+        vam('#Box_1412c>.background').setAttribute('style', 'display:block')
+        vam('#Box_1412c>.box').setAttribute('style', 'display:flex')
+        vam('#Box_1412c .dot').classList.add('acc')
+        vam('#Box_1412c .content').classList.add('acc')
+        vam('#Box_1412c>.background').addEventListener('click', () => {
+          vam('body').setAttribute('style', 'overflow-y: auto;')
+          vam('#Box_1412c>.background').setAttribute('style', 'display:none')
+          vam('#Box_1412c>.box').setAttribute('style', 'display:none')
+          vam("#Box_1412c .content.acc").classList.remove('acc')
+          vams('#Box_1412c .dot.acc').forEach((tab) => {
+            tab.classList.remove('acc')
+          })
+          vams('#Box_1412c .line>p').forEach((line) => {
+            line.setAttribute('style', 'display: none')
+          })
+        })
+        vam('#Box_1412c .out').addEventListener('click', () => {
+          vam('body').setAttribute('style', 'overflow-y: auto;')
+          vam('#Box_1412c>.background').setAttribute('style', 'display:none')
+          vam('#Box_1412c>.box').setAttribute('style', 'display:none')
         })
       })
     })
+
+    vam('#Box_1412c .suc').addEventListener('click', () => {
+      vam('#Box_1412c>.background').setAttribute('style', 'display:none')
+      vam('#Box_1412c>.box').setAttribute('style', 'display:none')
+      vam("#Box_1412c .content.acc").classList.remove('acc')
+      vams('#Box_1412c .dot.acc').forEach((tab) => {
+        tab.classList.remove('acc')
+      })
+      vams('#Box_1412c .line>p').forEach((tab) => {
+        tab.setAttribute('style', 'display: none')
+      })
+      vam('body').setAttribute('style', 'overflow-y: auto;')
+    })
+
+
+    vams('#Box_1412c .nextt').forEach((tab, index) => {
+      var contentlist = vams('#Box_1412c .content')[index + 1];
+      var dotlist = vams('#Box_1412c .dot')[index + 1];
+      var line = vams('#Box_1412c .line>p')[index];
+      tab.addEventListener('click', () => {
+        vam("#Box_1412c .content.acc").classList.remove('acc')
+        contentlist.classList.add('acc')
+        dotlist.classList.add('acc')
+        line.setAttribute('style', 'display:block')
+      })
+    })
+
+    vams('#Box_1412c .back').forEach((tab, index) => {
+      var contentlist = vams('#Box_1412c .content')[index + 1];
+      var contentback = vams('#Box_1412c .content')[index];
+      var dotlist = vams('#Box_1412c .dot')[index + 1];
+      var line = vams('#Box_1412c .line>p')[index]
+      const backtitle = vams('#Box_1412c .back');
+      tab.addEventListener('click', () => {
+        contentlist.classList.remove('acc');
+        contentback.classList.add('acc')
+        dotlist.classList.remove('acc')
+        line.setAttribute('style', 'display: none')
+      })
+    })
+
   });
+  

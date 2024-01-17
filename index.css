@@ -20,20 +20,22 @@ section {
     background-size: cover;
 }
 
-.mb{
+.mb {
     max-height: 100vh;
     min-height: 100vh;
     width: 100%;
     background-color: var(--color-main);
     justify-content: center;
-    align-items: center; 
-    flex-direction: column; 
+    align-items: center;
+    flex-direction: column;
 }
-.mb>h1{
+
+.mb>h1 {
     color: white;
     font-size: calc(24px + 3vw);
 }
-.mb>p{
+
+.mb>p {
     color: white;
     font-size: calc(16px + 1vw);
     width: 80%;
@@ -69,7 +71,8 @@ section {
     .logo>img {
         height: 100px;
     }
-    .mb{
+
+    .mb {
         display: none;
     }
 }
@@ -177,18 +180,21 @@ section {
     width: 35%;
 }
 
-.list-slick>li:nth-child(7){
+.list-slick>li:nth-child(7) {
     margin-bottom: 30px;
 }
+
 @media (max-width: 1280px) {
     .list-slick>li:nth-child(1) {
         font-weight: 600;
         margin-bottom: 10px;
     }
+
     .list-slick>li {
         padding: 2px 0;
-        margin:10px 0;
+        margin: 10px 0;
     }
+
     .list-slick>li>p {
         font-size: 12px;
     }
@@ -390,6 +396,7 @@ section {
 .premium .package-name {
     background: var(--color-main);
 }
+
 .premium .package-name.c1::before {
     content: "QR";
     color: var(--color-main);
@@ -402,29 +409,31 @@ section {
     font-size: 20px;
 }
 
-.contact{
+.contact {
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 16px;
 }
-.contact>div{
+
+.contact>div {
     width: 20px;
 }
 
-.contact>i{
+.contact>i {
     font-size: 1.1em;
     color: var(--color-main);
     margin: 0 10px;
 }
-.contact>p{
+
+.contact>p {
     margin: 0;
     font-size: 1.1em;
     font-weight: 300;
     color: var(--color-main);
 }
 
-.img>img{
+.img>img {
     width: 90%;
     object-fit: cover;
     margin-left: -16px;
@@ -441,10 +450,6 @@ section {
     .wrapper .table {
         width: 100%;
     }
-}
-
-::selection {
-    color: #fff;
 }
 
 .table .ribbon {
@@ -493,27 +498,29 @@ section {
 }
 
 
-#slick{
+#slick {
     position: relative;
 }
 
-.prev{
+.prev {
     position: absolute;
     bottom: -5px;
     left: 35%;
 }
-.next{
+
+.next {
     position: absolute;
     bottom: -5px;
     right: 35%;
 }
 
-.prev>i,.next>i{
+.prev>i,
+.next>i {
     font-size: 18px;
     color: var(--color-main);
 }
 
-.slick-dots{
+.slick-dots {
     list-style: none;
     padding: 0;
     display: flex !important;
@@ -521,7 +528,7 @@ section {
     margin-top: -20px;
 }
 
-.slick-dots>li>button{
+.slick-dots>li>button {
     font-size: 12px;
     color: white;
     width: 20px;
@@ -531,7 +538,8 @@ section {
     border: none;
     margin: 0 5px;
 }
-.slick-dots>.slick-active>button{
+
+.slick-dots>.slick-active>button {
     background-color: var(--color-main);
     border: none;
 }
@@ -540,28 +548,32 @@ section {
     .table .price-section>h1 {
         font-size: 36px;
     }
-    
+
 }
+
 @media (max-width:980px) {
-    section{
+    section {
         display: none;
     }
-    .mb{
+
+    .mb {
         display: flex;
     }
 }
 
-.contactqr{
+.contactqr {
     display: flex;
     width: 100%;
     align-items: center;
 }
-.qr{
+
+.qr {
     display: 100%;
     width: 42%;
     margin-left: 10px;
 }
-.qr>img{
+
+.qr>img {
     width: 100%;
     object-fit: cover;
     object-position: center;
@@ -569,20 +581,26 @@ section {
     border: 3px solid var(--color-main);
     padding: 0;
 }
-.infor{
+
+.infor {
     flex: 1;
 }
-.infor>h1{
+
+.infor>h1 {
     font-size: calc(12px + 0.75vw);
     color: var(--color-main);
     padding: 0 10px;
     margin: 0;
 }
-.infor>h2>span,.infor>h3>span{
+
+.infor>h2>span,
+.infor>h3>span {
     color: black;
     font-weight: 500;
 }
-.infor>h2,.infor>h3{
+
+.infor>h2,
+.infor>h3 {
     font-size: calc(12px + 0.3vw);
     color: var(--color-main);
     margin: 0;
@@ -591,16 +609,16 @@ section {
     font-weight: 600;
 }
 
-.wrap{
+.wrap {
     display: flex;
     justify-content: space-between;
 }
 
-.bught{
+.bught {
     width: 100%;
 }
 
-.bughtwrap{
+.bughtwrap {
     border-radius: 16px;
     border: .5px solid var(--color-nen);
     background-color: white;
@@ -609,9 +627,10 @@ section {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     padding: 10px;
 }
-.items-top{
+
+.items-top {
     clip-path: polygon(90% 0%, 100% 50%, 90% 100%, 0% 100%, 10% 50%, 0% 0%);
-    width: max-content ;
+    width: max-content;
     height: max-content;
     padding: 5px 15px;
     background-color: #1565C0;
@@ -620,7 +639,8 @@ section {
     position: absolute;
     left: -10px;
 }
-.items{
+
+.items {
     border-radius: 8px;
     border: .5px solid var(--color-nen);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
@@ -630,72 +650,84 @@ section {
     position: relative;
 }
 
-.items-img>img{
+.items-img>img {
     width: 100%;
     aspect-ratio: 9/10;
     object-fit: cover;
+    object-position: top center;
 }
-.items-bottom{
+
+.items-bottom {
     padding: 10px;
 }
-.items-bottom>p{
+
+.items-bottom>p {
     font-size: 0.6em;
     margin: 0;
 }
-.items-bottom>h1{
+
+.items-bottom>h1 {
     font-size: 1em;
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
-.items-bottom>div{
+
+.items-bottom>div {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.items-bottom h4{
+
+.items-bottom h4 {
     font-size: 0.8em;
     color: var(--color-main);
     margin: 0;
 }
-.items-bottom p{
+
+.items-bottom p {
     font-size: 0.7em;
     color: var(--color-main);
     margin: 0;
     color: unset;
 }
-.slick-arrow{
+
+.slick-arrow {
     width: max-content;
 }
-.preve{
+
+.preve {
     position: absolute;
     top: calc(50% - 16px);
     left: -10px;
     background-color: white;
-    padding: 1px 6px ;
+    padding: 1px 6px;
     z-index: 999;
     border-radius: 8px;
     border: .5px solid var(--color-main);
 }
-.preve>i{
+
+.preve>i {
     font-size: 25px;
 }
-.nexte{
+
+.nexte {
     position: absolute;
     top: calc(50% - 16px);
     right: -10px;
     background-color: white;
-    padding: 1px 6px ;
+    padding: 1px 6px;
     z-index: 999;
     border-radius: 8px;
     border: .5px solid var(--color-main);
 }
-.nexte>i{
+
+.nexte>i {
     font-size: 25px;
 }
 
-.bg{
+.bg {
     position: fixed;
     top: 0;
     left: 0;
@@ -704,7 +736,8 @@ section {
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 999999999;
 }
-.box{
+
+.box {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -716,44 +749,46 @@ section {
     border-radius: 8px;
     padding: 20px;
 }
-.box img{
-    aspect-ratio: 1/1;
+
+.box img {
+    aspect-ratio: 10/10;
     object-fit: cover;
     border: 1px solid black;
 }
-.hinhanh{
-    width: 50%;
-}
-#img1{
+
+#img1 {
     width: 100%;
     border: 1px solid black;
     margin-bottom: 10px;
     margin-top: 10px;
 }
-.hinhanh>div{
+
+.hinhanh>div {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
 }
-.hinhanh>div>img{
+
+.hinhanh>div>img {
     width: 32%;
     object-fit: cover;
 }
-.thongtin{
+
+.thongtin {
     font-size: 16px;
     display: flex;
-    flex-direction: column ;
+    flex-direction: column;
     justify-content: space-between;
 }
-.thongtin span{
+
+.thongtin span {
     font-size: 1em;
-    color: var(--color-nen);
     font-weight: 500;
-    margin:  20px;
+    margin: 20px;
 }
-.thongtin h1{
-    font-size: 2.5em;
-    color: var(--color-nen);
+
+.thongtin h1 {
+    font-size: 1.5em;
     font-weight: 500;
     margin: 10px 20px 10px 20px;
     display: -webkit-box;
@@ -761,51 +796,312 @@ section {
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
-.thongtin h4{
-    font-size: 2em;
-    font-weight: 500;
-    margin: 10px 20px;
-    color: var(--color-nen);
+
+.thongtin h4 {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: var(--color-main);
+    margin: 0;
 }
-.thongtin p{
+
+.thongtin h3 {
+    font-size: 1em;
+    color: unset;
+    font-weight: 500;
+    margin: 0;
+    margin-left: 30px;
+}
+
+.thongtin p {
     font-size: 1em;
     font-weight: 500;
     margin: 10px 20px;
-}
-.thongtin .feedback{
-    display: flex;
-    margin: 20px;
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-align: justify;
 }
 
-.thongtin-bottom{
+.thongtin .feedback {
+    display: flex;
+    margin: 20px;
+    align-items: center;
+}
+
+.thongtin-bottom {
     font-size: 16px;
 }
-.thongtin-bottom>.border-top{
+
+.thongtin-bottom>.border-top {
     width: 90%;
     margin: 0 20px;
     height: 2px;
     background-color: rgb(58, 58, 58);
 }
 
-.Share{
+.Share {
     display: flex;
     margin: 20px;
     align-items: center;
 }
-.Share>p{
+
+.Share>p {
     font-size: 1em;
     margin-left: 10px;
     margin-bottom: unset;
 }
 
-.thongtin-contact{
+.thongtin-contact {
     display: flex;
     margin: 10px;
+    align-items: center;
 }
-.thongtin-contact>svg{
-    margin: 10px;
-    padding: 5px;
-    background-color: rgb(234, 234, 234);
+
+.box svg {
+    margin: 0 10px;
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+    background-color: var(--color-main);
     fill: var(--color-nen);
     border-radius: 3px;
+}
+
+#Box_1412c>.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    animation: box1412cBox 0.3s linear forwards;
+    z-index: 9999999999999999999999999999999999;
+}
+
+@keyframes box1412cBox {
+    0% {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+}
+
+#Box_1412c>.box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 650px;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    z-index: 999999999999999999;
+    width: 60%;
+    flex-direction: column;
+    justify-content: space-between;
+    display: flex;
+    padding: 30px;
+    border-radius: 16px;
+}
+
+#Box_1412c>.box>div>.title {
+    font-size: 42px;
+    text-align: center;
+    margin: 15px 0;
+    font-family: 'Roboto';
+    color: var(--color-text);
+}
+
+#Box_1412c>.box>div>.dots {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    margin: 20px auto 50px auto;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+#Box_1412c>.box>div>.dots>.dot {
+    position: relative;
+}
+
+#Box_1412c>.box>div>.dots>.dot>p {
+    font-size: 18px;
+    border-radius: 50%;
+    background-color: rgb(169, 169, 169);
+    ;
+    margin: 0;
+    color: white;
+    font-weight: 600;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Box_1412c>.box>div>.dots>.dot.acc>p {
+    background-color: var(--color-main);
+    color: white;
+}
+
+#Box_1412c>.box>div>.dots>.line {
+    flex: 1;
+    height: 3px;
+}
+
+#Box_1412c>.box>div>.dots>.line>p {
+    height: 3px;
+    background-color: var(--color-main);
+    animation: box1412cLine 0.5s linear forwards;
+    display: none;
+}
+
+@keyframes box1412cLine {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+#Box_1412c>.box>div>.content {
+    display: none;
+}
+
+#Box_1412c>.box>div>.content.acc {
+    display: flex;
+    flex-direction: column;
+}
+
+#Box_1412c .button {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: end;
+}
+
+#Box_1412c .dot>p::before {
+    position: absolute;
+    color: black;
+    font-size: 18px;
+    width: max-content;
+    bottom: 40px;
+}
+
+#Box_1412c .d1>p::before {
+    content: 'Product Details';
+}
+
+#Box_1412c .d2>p::before {
+    content: 'Our Purpose';
+}
+
+#Box_1412c .d3>p::before {
+    content: 'Product Payment';
+}
+
+.out, .nextt, .back, .suc {
+    background-color: var(--color-main);
+    border: none;
+    border-radius: 6px;
+    padding: 3px 10px;
+    font-size: 1em;
+    margin: 5px 0;
+    color: white;
+}
+.out {
+    background-color: var(--color-main);
+    border: none;
+    border-radius: 6px;
+    padding: 5px 10px;
+    font-size: 1em;
+    margin: 5px 0;
+    color: white;
+}
+
+.pay{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+#Box_1412c .content .button.fh{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.pay img{
+    width: 30%;
+    aspect-ratio: 1/1;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin: 20px 0;
+    border: 2px solid var(--color-nen);
+    border-radius: 16px;
+}
+.pay h1{
+    font-size: 2em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+.pay h1>span{
+    color: #1565C0;
+    margin: 0;
+}
+.pay h1>p{
+    color: var(--color-nen);
+    margin: 0;
+}
+.pay h2{
+    font-size: 1em;
+    text-align: center;
+}
+
+.pay h2>span{
+    font-size: 1em;
+    text-align: center;
+    color: var(--color-main);
+}
+
+.purpose{
+    font-size:16px ;
+}
+.purpose>h1{
+    color: var(--color-main);
+    font-size: 1.3em;
+}
+.purpose>p{
+    color: var(--color-main);
+    font-size: .7em;
+    width: 80%;
+    text-align: justify
+}
+
+.purposedot{
+    width: 3px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: var(--color-main);
+    position: relative;
+    z-index: 1111;
+}
+.purposedot>i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: var(--color-main);
+    z-index: 11111;
+    background-color: white;
 }
